@@ -1,0 +1,30 @@
+while True:
+    print(" kalkulator sederhana ".center(50,"-"))
+    print(" isi nama ".center(50,"="))
+    print("""1 Menghitung Luas Segitiga
+2 Menghitung Luas Persegi Panjang
+3 Menentukan Nomor Ganjil/Genap
+4 exit""")
+    opt = int(input("Pilih : "))
+    if opt == 1:
+        alas = int(input("\nMasukan Alas   : "))
+        tinggi = int(input("Masukan Tinggi : "))
+        print(f"\nLuas Segitiga dari \nAlas   = {alas}\nTinggi = {tinggi} \nDengan Rumus 1/2 x Alas x Tinggi\nHasilnya = {alas*tinggi*0.5}\n")
+    elif opt == 2:
+        panjang = int(input("\nMasukan Panjang : "))
+        lebar = int(input("Masukan Lebar   : "))
+        print(f"\nLuas Persegi Panjang dari \nPanjang = {panjang} \nLebar = {lebar} \nDengan Rumus Panjang x Lebar \nHasilnya = {panjang*lebar}\n")
+    elif opt == 3:
+        num = int(input("\nMasukan angka : "))
+        if num % 2 == 0:
+            print(f"{num} adalah genap\n")
+        else:
+            print(f"{num} adalah ganjil\n")
+    elif opt == 4:
+        quit = input("\nApakah Kamu Ingin Keluar (y/n) : ")
+        if quit == 'y':
+            print("terimakasih")
+            break
+        else: continue
+    else:
+        print("ERROR - Angka yang anda masukan tidak ada didalam daftar")
